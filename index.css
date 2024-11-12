@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F2F5F9;
+}
+
+/* main */
+.main {
+    max-width: 410px;
+    padding: 0 0 20px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+/* images */
+.images {
+    width: 100%;
+    /* height: 300px; */
+    margin-bottom: -70px;
+}
+
+.images .image1 {
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.images .image2 {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: -70px;
+}
+
+/* body text */
+.main .text {
+    padding: 2rem;
+}
+
+.main .text .heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;    
+}
+
+.main .text .paragraph {
+    font-size: 1rem;
+    color: #4A5567;
+    font-family: "Lato", sans-serif;   
+}
+
+/* line */
+hr {
+    background-color: #F2F5F9;
+    height: 2px;
+    opacity: .2;
+}
+
+/* other section */
+.other .img {
+    width: 40px;
+    height: 40px;
+}
+
+.other img {
+    border-radius: 50%;
+    background-color: #F2F5F9;
+    width: 100%;
+}
+
+.other {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.imgtext .name {
+    font-weight: bolder;
+} 
+
+.author-info {
+    font-size: 14px;
+    margin-top: 1.5rem;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    color: rgb(55, 65, 81);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 470px){
+    .images .image2 {
+        top: -40px;
+    }
+}
+
+@media screen and (min-width: 640px){
+    .images {
+        margin-bottom: -100px;
+    }
+}
